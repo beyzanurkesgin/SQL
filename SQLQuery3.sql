@@ -10,7 +10,7 @@ Select * from Products where CategoryID =1 and UnitPrice>=10
 Select * from Products order by ProductName
 Select * from Products where categoryId=1 order by UnitPrice desc
 Select count(*)Adet from Products 
-select CategoryID,count(*) from Products where UnitPrice>30 group by CategoryID having count(*)<15
+select CategoryID,count(*) from Products where UnitPrice>30 group by CategoryID having count(*) < 15
 
 
 select Products.ProductID,Products.ProductName,Products.UnitPrice,Categories.CategoryName
